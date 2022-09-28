@@ -12,8 +12,8 @@ contract Intro {
             // Store data at first EVM free memory location 0x80
             mstore(0x80, variable_name)
 
-            // Return 2 bytes (16 bits) from data memory
-            return(0x80, 2)
+            // Return data from memory
+            return(0x80, 32)
         }
     }
 }
